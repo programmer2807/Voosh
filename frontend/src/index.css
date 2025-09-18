@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.chat-message {
+  @apply p-4 rounded-lg mb-4;
+  max-width: 80%;
+}
+
+.user-message {
+  @apply bg-blue-500 text-white ml-auto;
+}
+
+.bot-message {
+  @apply bg-gray-200 text-gray-800;
+}
+
+.message-input {
+  @apply w-full p-4 border rounded-lg;
+}
+
+.message-input:focus {
+  @apply outline-none ring-2 ring-blue-500;
+}
+
+.send-button {
+  @apply bg-blue-500 text-white px-6 py-2 rounded-lg transition-colors;
+}
+
+.send-button:hover {
+  @apply bg-blue-600;
+}
